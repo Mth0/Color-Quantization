@@ -1,3 +1,5 @@
+### Para falantes de português, o documento "quantizacao_cores.pdf" detalha melhor o algoritmo e resultados!
+
 # Resume
 
 I discute about the color quantization problem and try to solve it, approximately, using the GRASP meta-heuristics. The .ipynb file has the implementation in Julia and some examples of its use. The implementation is in a distributed version. It seems the algorithm got really faster and it helped to test it in some larger images.
@@ -40,23 +42,33 @@ I tested this implementation in some images. And show the results here.
 
 ## Cats image
 
-![gatos1](https://github.com/user-attachments/assets/00285c44-7c2e-472e-b15f-32fe4a889dce)
+<div align="center">
+  <image src="https://github.com/user-attachments/assets/00285c44-7c2e-472e-b15f-32fe4a889dce">
+</div>
 
-![gatos1_GRASP](https://github.com/user-attachments/assets/adc9d88a-8727-4ae8-ad8f-e3a974fb778c)
+<div align="center">
+  <image src="https://github.com/user-attachments/assets/adc9d88a-8727-4ae8-ad8f-e3a974fb778c">
+</div>
 
 ## Naruto image
 
-![naruto](https://github.com/user-attachments/assets/134f51e6-dec8-44a9-84d7-69cce350e90f)
+<div align="center">
+  <image src="https://github.com/user-attachments/assets/134f51e6-dec8-44a9-84d7-69cce350e90f">
+</div>
 
-![naruto_GRASP](https://github.com/user-attachments/assets/14ff162f-2115-47b6-b73a-c507c31f908e)
-
+<div align="center">
+  <image src="https://github.com/user-attachments/assets/14ff162f-2115-47b6-b73a-c507c31f908e">
+</div>
 
 ## Pokémon Yellow image
 
-![pokemon](https://github.com/user-attachments/assets/8321dda8-2ba1-45a4-af4e-65f7ff3b510d)
+<div align="center">
+  <image src="https://github.com/user-attachments/assets/8321dda8-2ba1-45a4-af4e-65f7ff3b510d">
+</div>
 
-![pokemon_GRASP](https://github.com/user-attachments/assets/cc9e233e-296e-473b-937e-b631cd634ccb)
-
+<div align="center">
+  <image src="https://github.com/user-attachments/assets/cc9e233e-296e-473b-937e-b631cd634ccb">
+</div>
 
 # Some conclusions
 
