@@ -1,12 +1,12 @@
 ### Para falantes de português, o documento "quantizacao_cores.pdf" detalha melhor o algoritmo e resultados!
 
-# Resume
+# Abstract
 
-I discute about the color quantization problem and try to solve it, approximately, using the GRASP meta-heuristics. The .ipynb file has the implementation in Julia and some examples of its use. The implementation is in a distributed version. It seems the algorithm got really faster and it helped to test it in some larger images.
+I discuss about the color quantization problem and try to solve it, approximately, using the GRASP meta-heuristics. The .ipynb file has the parallel implementation in Julia and some examples of its use.
 
 # Color quantization
 
-The one of the mostly image format used in computers and other devices is the RGB format. In this format there are three channels which values can vary between 0 and 255. The pixels, therefore, are represented by three values, one for each channel. So we have $256^{3}$ possible colors! That's a lot more than the number of colors a human can recognize. In fact, this huge number of possible colors can enlarge the image file size. So what if we delimit the number of colors of our image? Is it possible to reduce drastically this number and maintain a good image quality? Yes!
+One of the mostly used image format in computers and other devices is the RGB format. In this format there are three channels which values can vary between 0 and 255. The pixels, therefore, are represented by three values, one for each channel. So we have $256^{3}$ possible colors! That's a lot more than the number of colors a human can recognizes. In fact, this huge number of possible colors can enlarge the image file size. So what if we delimit the number of colors of our image? Is it possible to reduce drastically this number and maintain a good image quality? Yes!
 
 Color quantization looks to solve this problem: To find a good color palette that reduce the number of colors of the image and preserve its quality. There are a lot of ways to define this problem more precisely and a lot of algorithms to solve it. I'll define it in a specific way, but remind that it's not the unique way to do that. First let's remind that in the RGB format images with $m$ pixels by $n$ pixels can be represented as $3$ matrices with $m \times n$ dimension, one matrix for each channel containing the values of the pixels in that channel.
 
@@ -38,7 +38,7 @@ I tested this implementation in some images. And show the results here.
 
 - The first one is an image of two cats. The first is the original one and the second the one from GRASP with 64 colors only.
 - The second is an image from Naruto's Manga. The first image is the original one and the second the one from GRASP with 64 colors only.
-- The third is an image from Pokémon Yellow game. The interesting fact is the this game was released for Game Boy Color, a portable console that only supported 546 simultaneous colors in the screen. So what if we try to quantize this imagem with only 56 colors? The first image is the original one and the second the one from GRASP with only 56 colors.
+- The third is an image from Pokémon Yellow game. The interesting fact is that this game was released for Game Boy Color, a portable console that only supported 56 simultaneous colors in the screen. So what if we try to quantize this imagem with only 56 colors? The first image is the original one and the second the one from GRASP with only 56 colors.
 
 ## Cats image
 
@@ -72,4 +72,4 @@ I tested this implementation in some images. And show the results here.
 
 # Some conclusions
 
-GRASP seems to work fine, but the greedy search and local search are **really** expansive and probably I'll try to fasten it in the future.
+GRASP seems to work fine, but the greedy search and local search are **really** expensive and of course it's something to take a look.
